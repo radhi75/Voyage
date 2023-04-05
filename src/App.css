@@ -1,38 +1,42 @@
-.App {
+.nav{
+z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(38, 230, 255, 0);
+  padding: 1%;
+}
+.nav-list{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+}
+.nav-input{
+  height: 30px;
+  border-radius: 25px;
+ 
+}
+.nav-input::placeholder{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.desti{
+  text-align: center;
+  margin: 2%;
 }
+.title{
+  color: transparent;
+  font-size: 200px;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  background-image: url("https://img.freepik.com/free-vector/gradient-summer-background-videocalls_52683-61337.jpg");
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cards{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  flex-wrap: wrap;
+  gap: 30px;
 }
